@@ -4,17 +4,21 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='./styles/app.css')
     title Productly
   body
     header.header
       .wrapper
         a.logo(href="#!") Logo
         nav.header__navigation
-        ul.navigation
-          li Home
-          li Services
-          li About
-          li Product
+          ul.navigation
+            li Home
+            li Services
+            li About
+            li Product
         .header__buttons
           button.button.button--bordered Sign In
           button.button.button--colored Sign Up
@@ -73,11 +77,28 @@ html(lang="en")
                 a(href="tel:+79955555555") +375 (22) 345-00-99
               p
                 span.ico.ico--letter
-                a(href="tel:+79955555555") +375 (22) 345-00-99
+                a(href="mailto:emailname@gmail.com") emailname@gmail.com
             .contact-us__form
               form(action="", method="post")
                 .layout-2-column
-                // TODO 1:41
+                  input(type="text" name="name" placeholder="Your name")
+                  input(type="email" name="email" placeholder="Your email")
+                textarea#(name="question", cols="30", rows="10")
+                .contact-us__button
+                  button(type="submit").button.button--colored Send
+      footer.footer
+        .wrapper
+          .layout-4-column
+            a.logo(href="#!") Logo
+            .footer-navigation
+              h4 Quick Links
+              ul.footer-navigation__links
+                li
+                  a(href="#") About us
+
+
+
+
 
 
 
